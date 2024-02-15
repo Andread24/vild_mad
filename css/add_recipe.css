@@ -1,0 +1,57 @@
+form {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+}
+
+.grid_1-1 .column {
+  padding: 20px;
+}
+
+/* label margin + farve */
+
+label {
+  color: rgb(253, 255, 155);
+  font-family: "urbanist";
+}
+
+input {
+  color: rgb(253, 255, 155);
+  margin-bottom: 30px;
+}
+
+textarea {
+  background-color: rgb(23, 63, 13);
+  border: 2px solid rgb(138, 163, 131);
+  margin-bottom: 50px;
+  font-family: "urbanist";
+}
+
+/* tekst */
+
+p {
+  text-align: center;
+  margin: 50px;
+  color: rgb(253, 255, 155);
+  font-size: 20px;
+  font-family: "urbanist";
+}
+/* Media query til computerskærm */
+
+@media only screen and (max-width: 700px) {
+  .grid_1-1 {
+    display: block;
+  }
+
+  /* label farve */
+
+  label {
+    color: rgb(253, 255, 155);
+  }
+}

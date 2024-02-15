@@ -2,10 +2,18 @@ body {
   background-color: rgb(23, 63, 13);
 }
 
+/* tekst */
+
+@font-face {
+  font-family: "urbanist";
+  src: url(../fonts/urbanist-variablefont_wght-webfont.woff2-kopi);
+}
+
 h1 {
   text-align: center;
-  margin-top: 50px;
+  margin: 50px;
   color: rgb(253, 255, 155);
+  font-family: "urbanist";
 }
 
 /* burgermenu */
@@ -37,8 +45,9 @@ nav {
   transition: color 0.3s;
   text-align: start;
   color: rgb(253, 255, 155);
-  font-size: 25px;
-  margin-top: 0%;
+  font-size: 20px;
+  margin-top: 10%;
+  font-family: "urbanist";
 }
 
 .menu a:hover {
@@ -110,6 +119,7 @@ nav {
     width: 100%;
     box-shadow: 0 0 10px rgb(79, 116, 70);
     z-index: 1;
+    font-family: "urbanist";
   }
 
   nav.active .menu li {
