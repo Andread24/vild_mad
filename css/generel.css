@@ -1,11 +1,18 @@
 body {
   background-color: rgb(23, 63, 13);
 }
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(253, 255, 155);
+}
+
 /* burgermenu */
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .menu {
@@ -69,11 +76,6 @@ nav {
   .grid_1-1-1_nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .logo {
-    width: 80%;
-    height: auto;
   }
 
   .menu {
