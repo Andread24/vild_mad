@@ -1,7 +1,24 @@
 body {
   background-color: rgb(23, 63, 13);
+  min-height: 100vh;
+  margin: 0;
 }
-
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+.footer_tekst {
+  background-color: #f4e5b6;
+  width: 100%;
+}
 /* tekst */
 
 @font-face {
@@ -20,7 +37,7 @@ h1 {
 
 nav {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .menu {
@@ -123,7 +140,7 @@ nav {
   }
 
   nav.active .menu li {
-    margin: 15px 20px;
+    margin: 10px 15px;
   }
 
   nav.active .menu a {
