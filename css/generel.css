@@ -1,7 +1,22 @@
 body {
   background-color: rgb(23, 63, 13);
+  min-height: 100vh;
 }
-
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+.footer_img {
+  margin: 0;
+  padding: 0;
+}
 /* tekst */
 
 @font-face {
