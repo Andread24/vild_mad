@@ -7,14 +7,30 @@
   gap: 30px;
   margin-left: 50px;
   margin-right: 50px;
-  background-color: rgb(138, 163, 131);
 }
 .grid_produktliste img {
   max-width: 80%;
-  margin: 50px;
 }
 
 .grid_produktliste article {
   display: flex;
   flex-direction: column;
+}
+
+.smallProduct {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.1em;
+  background-color: rgb(138, 163, 131);
+  padding: 10%;
+  align-items: center;
+}
+
+.smallProduct:hover {
+  transform: scale(1.04);
+}
+
+.smallProduct p {
+  margin: 5px 0;
 }
