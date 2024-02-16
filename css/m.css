@@ -5,18 +5,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
-  background-color: rgb(138, 163, 131);
+  margin: 60px;
 }
 .grid_produktliste img {
-  max-width: 80%;
-  margin: 50px;
-}
-
-.grid_produktliste article {
-  display: flex;
-  flex-direction: column;
+  max-width: 60%;
 }
 
 .grid_produktliste article {
@@ -38,6 +30,8 @@
   transform: scale(1.04);
 }
 
-.smallProduct p {
+.smallProduct h3 {
   margin: 5px 0;
+  font-family: "urbanist";
+  font-size: 15px;
 }
