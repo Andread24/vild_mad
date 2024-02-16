@@ -1,6 +1,7 @@
 body {
   background-color: rgb(23, 63, 13);
   min-height: 100vh;
+  margin: 0;
 }
 img {
   width: 100%;
@@ -10,12 +11,13 @@ img {
 footer {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   margin: 0;
 }
-.footer_img {
-  margin: 0;
-  padding: 0;
+.footer_tekst {
+  background-color: #f4e5b6;
+  width: 100%;
 }
 /* tekst */
 
