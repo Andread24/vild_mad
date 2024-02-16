@@ -1,51 +1,45 @@
-@media only screen and (max-width: 700px) {
-  /* label farve */
+/************** produktliste **************/
 
-  label {
-    color: rgb(253, 255, 155);
-  }
-
-  /************** produktliste **************/
-
-  .grid_produktliste {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  .grid_produktliste img {
-    max-width: 80%;
-  }
-
-  .grid_produktliste article {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .smallProduct {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border-radius: 0.1em;
-    background-color: rgb(138, 163, 131);
-    padding: 10%;
-    align-items: center;
-  }
-
-  .smallProduct:hover {
-    transform: scale(1.04);
-  }
-
-  .smallProduct p {
-    margin: 5px 0;
-    font-family: "urbanist";
-    font-size: 15px;
-  }
+.grid_produktliste {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.grid_produktliste img {
+  max-width: 80%;
 }
 
-/* Media query til computerskærm */
+.grid_produktliste article {
+  display: flex;
+  flex-direction: column;
+}
 
-@media only screen and (max-width: 700px) {
+.smallProduct {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.1em;
+  background-color: rgb(138, 163, 131);
+  padding: 10%;
+  align-items: center;
+}
+
+.smallProduct:hover {
+  transform: scale(1.04);
+}
+
+.smallProduct h3 {
+  margin: 10px;
+  font-family: "urbanist";
+  color: rgb(253, 255, 155);
+  font-size: 15px;
+}
+
+.smallProduct p {
+  font-family: "urbanist";
+  font-size: 15px;
+  color: rgb(253, 255, 155);
 }

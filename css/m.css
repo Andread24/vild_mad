@@ -31,7 +31,14 @@
 }
 
 .smallProduct h3 {
-  margin: 5px 0;
+  margin: 10px;
+  font-family: "urbanist";
+  color: rgb(253, 255, 155);
+  font-size: 15px;
+}
+
+.smallProduct p {
   font-family: "urbanist";
   font-size: 15px;
+  color: rgb(253, 255, 155);
 }
