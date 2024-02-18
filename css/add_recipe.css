@@ -94,5 +94,6 @@ input {
   color: beige;
   font-size: 18px;
   font-family: "urbanist";
+  margin: 0;
 }
 /* Media query til computerskærm */
