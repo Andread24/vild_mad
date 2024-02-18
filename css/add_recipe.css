@@ -1,57 +1,98 @@
-form {
-  margin-left: 10px;
-  margin-right: 10px;
+.forms_grid {
+  display: grid;
+  grid-template-rows: 0.5fr 4fr 0.5fr 0.5fr;
+  margin: 50px 5%;
+  padding: 0;
+  row-gap: 30px;
 }
-
+label {
+  text-align: left;
+}
+textarea {
+  text-align: center;
+}
 .grid_1-1 {
   display: grid;
+  grid-row: 1;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+}
+.grid_2-1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  justify-items: center;
+  column-gap: 30px;
+  row-gap: 30px;
 }
-
-.grid_1-1 .column {
-  padding: 20px;
+#grid_picture {
+  grid-column: 1;
+  grid-row: 1;
 }
-
+#grid_ingredients {
+  grid-column: 1;
+  grid-row: 2;
+}
+#grid_instructions {
+  grid-row: 1/2 span;
+  grid-column: 2;
+}
+.grid_1 {
+  grid-row: 3;
+  margin-top: 50px;
+}
 /* label margin + farve */
 
-label {
+#grid_instructions textarea,
+#grid_ingredients textarea {
+  height: 100%;
+}
+form label {
   color: rgb(253, 255, 155);
   font-family: "urbanist";
+  text-align: left;
+  width: 100%;
 }
-
+#image {
+  color: rgb(253, 255, 155);
+  font-family: "urbanist";
+  text-align: center;
+  width: 100%;
+  height: 91%;
+  margin-top: 1px;
+  padding-right: 4px;
+  border: 2px solid rgb(138, 163, 131);
+}
 input {
   color: rgb(117, 117, 78);
-  margin-bottom: 30px;
 }
 
 textarea {
   background-color: rgb(23, 63, 13);
   border: 2px solid rgb(138, 163, 131);
-  margin-bottom: 50px;
+  width: 100%;
   font-family: "urbanist";
+  resize: none;
 }
 
 /* tekst */
 
 p {
   text-align: center;
-  margin: 50px;
   color: rgb(253, 255, 155);
   font-size: 20px;
   font-family: "urbanist";
 }
-/* Media query til computerskærm */
-
-@media only screen and (max-width: 700px) {
-  .grid_1-1 {
-    display: block;
-  }
-
-  /* label farve */
-
-  label {
-    color: rgb(253, 255, 155);
-  }
+label {
+  text-align: center;
+  color: rgb(253, 255, 155);
+  font-size: 20px;
+  font-family: "urbanist";
 }
+textarea,
+input {
+  text-align: left;
+  color: beige;
+  font-size: 18px;
+  font-family: "urbanist";
+}
+/* Media query til computerskærm */
