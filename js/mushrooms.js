@@ -27,7 +27,7 @@ function showProduct(items) {
   copy.querySelector("#seasons").textContent = items.season;
   copy.querySelector("#landscape").textContent = items.landscape;
 
-  copy.querySelector(".m_link").setAttribute("href", `m_singleview.html?id=${items.id}`);
+  copy.querySelector("a").href = `m_singleview.html?id=${items.id}`;
 
   // appende
   document.querySelector(".grid_produktliste").appendChild(copy);
