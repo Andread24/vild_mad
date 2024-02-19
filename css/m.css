@@ -1,9 +1,17 @@
-/* Produktliste */
-.overskrift {
-  margin-bottom: 5%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
+/* Produktliste */
+.overskrift {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+h2,
+p {
   margin-top: 20px;
   text-align: center;
   color: rgb(253, 255, 155);
@@ -22,15 +30,15 @@ h1:after {
   left: 30%;
 }
 
-#m_img {
+.m_img {
   border-radius: 0.5rem;
 }
 
 .grid_produktliste {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 5%;
+  gap: 4%;
   margin: 3% 8% 3% 8%;
 }
 .grid_produktliste img {
@@ -50,6 +58,7 @@ h1:after {
   background-color: rgb(138, 163, 131);
   padding: 10%;
   align-items: center;
+  margin: 0px;
 }
 
 .smallProduct:hover {
@@ -71,5 +80,84 @@ h1:after {
 }
 
 .footer_img {
-  margin-top: 12%;
+  margin-top: 55%;
+}
+
+@media only screen and (min-width: 950px) {
+  /* Produktliste */
+  .overskrift {
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(253, 255, 155);
+    font-family: "urbanist";
+    font-size: 22px;
+  }
+
+  h1:after {
+    background-color: rgb(253, 255, 155);
+    bottom: -20px;
+    height: 1px;
+    width: 40%;
+    position: relative;
+    content: "";
+    display: block;
+    left: 30%;
+  }
+
+  .m_img {
+    border-radius: 0.5rem;
+  }
+
+  .grid_produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5%;
+    margin: 3% 8% 3% 8%;
+  }
+  .grid_produktliste img {
+    max-width: 60%;
+  }
+
+  .grid_produktliste article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .smallProduct {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0.5em;
+    background-color: rgb(138, 163, 131);
+    padding: 10% 5%;
+    align-items: center;
+  }
+
+  .smallProduct:hover {
+    transform: scale(1.04);
+    transition: all 0.5s;
+  }
+
+  .smallProduct h3 {
+    margin: 10px;
+    font-family: "urbanist";
+    color: rgb(253, 255, 155);
+    font-size: 15px;
+  }
+
+  .smallProduct p {
+    font-family: "urbanist";
+    font-size: 15px;
+    color: rgb(253, 255, 155);
+  }
+
+  .footer_img {
+    margin-top: 12%;
+  }
 }
