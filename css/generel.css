@@ -64,7 +64,7 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   text-align: start;
-  color: rgb(253, 255, 155);
+  color: rgb(23, 63, 13);
   font-size: 20px;
   margin-top: 10%;
   font-family: "urbanist";
@@ -87,7 +87,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: rgb(253, 255, 155);
+  background-color: rgb(23, 63, 13);
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
