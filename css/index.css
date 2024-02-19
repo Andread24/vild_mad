@@ -1,4 +1,19 @@
 .mushroom_1 img {
-  width: 20%;
+  max-width: 60%;
   height: auto;
+  display: block;
+}
+
+.grass img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+}
+
+.forside_billede_1_1_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 0px;
+  margin: 10px;
 }
