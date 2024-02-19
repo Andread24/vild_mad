@@ -7,7 +7,8 @@
 fetch("https://lhzhpvvlomyswblehybb.supabase.co/rest/v1/mushrooms", {
   method: "GET",
   headers: {
-    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxoemhwdnZsb215c3dibGVoeWJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4MzIzOTgsImV4cCI6MjAyMzQwODM5OH0.t2Pxr9GZCPjNkKkI0Gg11I9Dyxb6VL50DMZmHE44Ma4",
+    apikey:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxoemhwdnZsb215c3dibGVoeWJiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDc4MzIzOTgsImV4cCI6MjAyMzQwODM5OH0.t2Pxr9GZCPjNkKkI0Gg11I9Dyxb6VL50DMZmHE44Ma4",
   },
 })
   .then((res) => res.json())
@@ -27,6 +28,11 @@ function showProduct(items) {
   copy.querySelector("img").src = items.image;
   copy.querySelector("#seasons").textContent = items.season;
   copy.querySelector("#landscape").textContent = items.landscape;
+
+  copy
+    .querySelector(".m_link")
+    .setAttribute("href", `m_singleview.html?id=${items.id}`);
+
   // appende
   document.querySelector(".grid_produktliste").appendChild(copy);
 }
