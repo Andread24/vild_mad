@@ -47,13 +47,13 @@ textarea {
   height: 100%;
 }
 form label {
-  color: rgb(253, 255, 155);
+  color: #003e23;
   font-family: "urbanist";
   text-align: left;
   width: 100%;
 }
 #image {
-  color: rgb(253, 255, 155);
+  color: #003e23;
   font-family: "urbanist";
   text-align: center;
   width: 100%;
@@ -67,7 +67,7 @@ input {
 }
 
 textarea {
-  background-color: rgb(23, 63, 13);
+  background-color: #aaba95;
   border: 2px solid rgb(138, 163, 131);
   width: 100%;
   font-family: "urbanist";
@@ -78,13 +78,13 @@ textarea {
 
 p {
   text-align: center;
-  color: rgb(253, 255, 155);
+  color: #003e23;
   font-size: 20px;
   font-family: "urbanist";
 }
 label {
   text-align: center;
-  color: rgb(253, 255, 155);
+  color: #003e23;
   font-size: 20px;
   font-family: "urbanist";
 }

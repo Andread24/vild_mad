@@ -1,14 +1,47 @@
-/************** produktliste **************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Produktliste */
+.overskrift {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+h2,
+p {
+  margin-top: 20px;
+  text-align: center;
+  font-family: "urbanist";
+  font-size: 22px;
+}
+
+h1:after {
+  background-color: #592e29;
+  bottom: -20px;
+  height: 1px;
+  width: 40%;
+  position: relative;
+  content: "";
+  display: block;
+  left: 30%;
+}
+
+.m_img {
+  border-radius: 0.5rem;
+}
 
 .grid_produktliste {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  gap: 30px;
-  margin: 60px;
+  gap: 4%;
+  margin: 3% 8% 3% 8%;
 }
 .grid_produktliste img {
-  max-width: 60%;
+  max-width: 80%;
 }
 
 .grid_produktliste article {
@@ -20,25 +53,128 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 0.1em;
-  background-color: rgb(138, 163, 131);
+  border-radius: 0.5em;
+  background-color: #c7d3b7;
   padding: 10%;
   align-items: center;
+  margin: 0px;
 }
 
 .smallProduct:hover {
   transform: scale(1.04);
+  transition: all 0.5s;
 }
 
 .smallProduct h3 {
   margin: 10px;
   font-family: "urbanist";
-  color: rgb(253, 255, 155);
+
   font-size: 15px;
 }
 
 .smallProduct p {
   font-family: "urbanist";
   font-size: 15px;
-  color: rgb(253, 255, 155);
+}
+
+.footer_img {
+  margin-top: 55%;
+}
+
+.m_link {
+  display: inline-block; /* Gjør lenkene til blokknivåelementer */
+  text-align: center; /* Sentrer lenkene og innholdet innenfor */
+}
+
+.m_img {
+  display: block; /* Gjør bildene til blokknivåelementer */
+  margin: 0 auto; /* Sentrer bildene innenfor lenkene */
+}
+
+@media only screen and (min-width: 950px) {
+  /* Produktliste */
+  .overskrift {
+    margin-top: 7%;
+    margin-bottom: 5%;
+  }
+
+  h2 {
+    margin-top: 20px;
+    text-align: center;
+
+    font-family: "urbanist";
+    font-size: 22px;
+  }
+
+  h1:after {
+    background-color: #592e29;
+    bottom: -20px;
+    height: 1px;
+    width: 40%;
+    position: relative;
+    content: "";
+    display: block;
+    left: 30%;
+  }
+
+  .m_img {
+    border-radius: 0.5rem;
+  }
+
+  .grid_produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5%;
+    margin: 3% 8% 3% 8%;
+  }
+  .grid_produktliste img {
+    max-width: 60%;
+  }
+
+  .grid_produktliste article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .smallProduct {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0.5em;
+    background-color: #c7d3b7;
+    padding: 10% 5%;
+    align-items: center;
+  }
+
+  .smallProduct:hover {
+    transform: scale(1.04);
+    transition: all 0.5s;
+  }
+
+  .smallProduct h3 {
+    margin: 10px;
+    font-family: "urbanist";
+
+    font-size: 15px;
+  }
+
+  .smallProduct p {
+    font-family: "urbanist";
+    font-size: 15px;
+  }
+
+  .footer_img {
+    margin-top: 12%;
+  }
+
+  .m_link {
+    display: inline-block; /* Gjør lenkene til blokknivåelementer */
+    text-align: center; /* Sentrer lenkene og innholdet innenfor */
+  }
+
+  .m_img {
+    display: block; /* Gjør bildene til blokknivåelementer */
+    margin: 0 auto; /* Sentrer bildene innenfor lenkene */
+  }
 }
