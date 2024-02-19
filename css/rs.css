@@ -1,0 +1,42 @@
+.main {
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px;
+  color: rgb(253, 255, 155);
+  font-family: "urbanist";
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  margin: 10px;
+}
+
+.box {
+  background-color: rgb(138, 163, 131);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.ingredients {
+  color: rgb(23, 63, 13);
+  padding-top: 5px;
+  font-family: "urbanist";
+}
+
+.instruction {
+  color: rgb(23, 63, 13);
+  padding-top: 5px;
+  font-family: "urbanist";
+}
+
+.tips {
+  color: rgb(23, 63, 13);
+  padding-top: 5px;
+  font-family: "urbanist";
+}

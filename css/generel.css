@@ -3,11 +3,6 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 footer {
   position: relative;
   bottom: 0;
