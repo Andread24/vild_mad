@@ -9,20 +9,6 @@ h2 {
   font-family: "urbanist";
 }
 
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 30px;
-  margin: 10px;
-}
-
-.box {
-  background-color: rgb(138, 163, 131);
-  padding: 20px;
-  border-radius: 8px;
-}
-
 .ingredients {
   color: rgb(23, 63, 13);
   padding-top: 5px;
@@ -39,4 +25,50 @@ h2 {
   color: rgb(23, 63, 13);
   padding-top: 5px;
   font-family: "urbanist";
+}
+
+@media screen and (min-width: 810px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 5%;
+    margin: 20% 25% 20% 25%;
+  }
+  .box {
+    background-color: rgb(138, 163, 131);
+    padding: 5px; /* Reducer padding */
+    border-radius: 8px;
+    margin: 5px 10px 5px 10px;
+  }
+
+  img {
+    display: block;
+    max-width: 40%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 10px;
+  }
+  .box {
+    background-color: rgb(138, 163, 131);
+    padding: 10px; /* Reducer padding */
+    border-radius: 8px;
+    margin: 5px; /* Juster margen */
+  }
+
+  img {
+    display: block;
+    max-width: 80%; /* Skalér billedet ned */
+    height: auto;
+    margin: auto; /* Centerbilledet */
+  }
 }
