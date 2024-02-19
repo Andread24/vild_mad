@@ -81,6 +81,16 @@ h1:after {
   margin-top: 55%;
 }
 
+.m_link {
+  display: inline-block; /* Gjør lenkene til blokknivåelementer */
+  text-align: center; /* Sentrer lenkene og innholdet innenfor */
+}
+
+.m_img {
+  display: block; /* Gjør bildene til blokknivåelementer */
+  margin: 0 auto; /* Sentrer bildene innenfor lenkene */
+}
+
 @media only screen and (min-width: 950px) {
   /* Produktliste */
   .overskrift {
@@ -156,5 +166,15 @@ h1:after {
 
   .footer_img {
     margin-top: 12%;
+  }
+
+  .m_link {
+    display: inline-block; /* Gjør lenkene til blokknivåelementer */
+    text-align: center; /* Sentrer lenkene og innholdet innenfor */
+  }
+
+  .m_img {
+    display: block; /* Gjør bildene til blokknivåelementer */
+    margin: 0 auto; /* Sentrer bildene innenfor lenkene */
   }
 }
