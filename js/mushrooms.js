@@ -23,8 +23,10 @@ function showProduct(items) {
   // lav en kopi
   const copy = template.cloneNode(true);
   // ændre indholds
-  copy.querySelector("h3").textContent = items.title;
+  copy.querySelector("h2").textContent = items.title;
   copy.querySelector("img").src = items.image;
+  copy.querySelector("#seasons").textContent = items.season;
+  copy.querySelector("#landscape").textContent = items.landscape;
   // appende
   document.querySelector(".grid_produktliste").appendChild(copy);
 }
