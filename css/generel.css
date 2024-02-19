@@ -20,14 +20,22 @@ footer {
   font-family: "urbanist";
   src: url(../fonts/urbanist-variablefont_wght-webfont.woff2-kopi);
 }
+a {
+  text-decoration: none;
+}
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
   text-align: center;
-  margin: 50px;
-  color: rgb(253, 255, 155);
+  color: #592e29;
   font-family: "urbanist";
 }
 
+p {
+  color: #003e23;
+}
 /* burgermenu */
 
 nav {

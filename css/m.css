@@ -14,7 +14,6 @@ h2,
 p {
   margin-top: 20px;
   text-align: center;
-  color: rgb(253, 255, 155);
   font-family: "urbanist";
   font-size: 22px;
 }
@@ -55,7 +54,7 @@ h1:after {
   flex-direction: column;
   position: relative;
   border-radius: 0.5em;
-  background-color: rgb(138, 163, 131);
+  background-color: #c7d3b7;
   padding: 10%;
   align-items: center;
   margin: 0px;
@@ -69,14 +68,13 @@ h1:after {
 .smallProduct h3 {
   margin: 10px;
   font-family: "urbanist";
-  color: rgb(253, 255, 155);
+
   font-size: 15px;
 }
 
 .smallProduct p {
   font-family: "urbanist";
   font-size: 15px;
-  color: rgb(253, 255, 155);
 }
 
 .footer_img {
@@ -93,7 +91,7 @@ h1:after {
   h2 {
     margin-top: 20px;
     text-align: center;
-    color: rgb(253, 255, 155);
+
     font-family: "urbanist";
     font-size: 22px;
   }
@@ -134,7 +132,7 @@ h1:after {
     flex-direction: column;
     position: relative;
     border-radius: 0.5em;
-    background-color: rgb(138, 163, 131);
+    background-color: #c7d3b7;
     padding: 10% 5%;
     align-items: center;
   }
@@ -147,14 +145,13 @@ h1:after {
   .smallProduct h3 {
     margin: 10px;
     font-family: "urbanist";
-    color: rgb(253, 255, 155);
+
     font-size: 15px;
   }
 
   .smallProduct p {
     font-family: "urbanist";
     font-size: 15px;
-    color: rgb(253, 255, 155);
   }
 
   .footer_img {
