@@ -14,13 +14,12 @@ h2,
 p {
   margin-top: 20px;
   text-align: center;
-  color: rgb(253, 255, 155);
   font-family: "urbanist";
   font-size: 22px;
 }
 
 h1:after {
-  background-color: rgb(253, 255, 155);
+  background-color: #592e29;
   bottom: -20px;
   height: 1px;
   width: 40%;
@@ -55,7 +54,7 @@ h1:after {
   flex-direction: column;
   position: relative;
   border-radius: 0.5em;
-  background-color: rgb(138, 163, 131);
+  background-color: #c7d3b7;
   padding: 10%;
   align-items: center;
   margin: 0px;
@@ -69,18 +68,27 @@ h1:after {
 .smallProduct h3 {
   margin: 10px;
   font-family: "urbanist";
-  color: rgb(253, 255, 155);
+
   font-size: 15px;
 }
 
 .smallProduct p {
   font-family: "urbanist";
   font-size: 15px;
-  color: rgb(253, 255, 155);
 }
 
 .footer_img {
   margin-top: 55%;
+}
+
+.m_link {
+  display: inline-block; /* Gjør lenkene til blokknivåelementer */
+  text-align: center; /* Sentrer lenkene og innholdet innenfor */
+}
+
+.m_img {
+  display: block; /* Gjør bildene til blokknivåelementer */
+  margin: 0 auto; /* Sentrer bildene innenfor lenkene */
 }
 
 @media only screen and (min-width: 950px) {
@@ -93,13 +101,13 @@ h1:after {
   h2 {
     margin-top: 20px;
     text-align: center;
-    color: rgb(253, 255, 155);
+
     font-family: "urbanist";
     font-size: 22px;
   }
 
   h1:after {
-    background-color: rgb(253, 255, 155);
+    background-color: #592e29;
     bottom: -20px;
     height: 1px;
     width: 40%;
@@ -134,7 +142,7 @@ h1:after {
     flex-direction: column;
     position: relative;
     border-radius: 0.5em;
-    background-color: rgb(138, 163, 131);
+    background-color: #c7d3b7;
     padding: 10% 5%;
     align-items: center;
   }
@@ -147,17 +155,26 @@ h1:after {
   .smallProduct h3 {
     margin: 10px;
     font-family: "urbanist";
-    color: rgb(253, 255, 155);
+
     font-size: 15px;
   }
 
   .smallProduct p {
     font-family: "urbanist";
     font-size: 15px;
-    color: rgb(253, 255, 155);
   }
 
   .footer_img {
     margin-top: 12%;
+  }
+
+  .m_link {
+    display: inline-block; /* Gjør lenkene til blokknivåelementer */
+    text-align: center; /* Sentrer lenkene og innholdet innenfor */
+  }
+
+  .m_img {
+    display: block; /* Gjør bildene til blokknivåelementer */
+    margin: 0 auto; /* Sentrer bildene innenfor lenkene */
   }
 }
