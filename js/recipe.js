@@ -20,15 +20,15 @@ function showProducts(items) {
 
 function showProduct(items) {
   const template = document.querySelector("#smallProductTemplate").content;
-
+  console.log(items);
   // lav en kopi
   const copy = template.cloneNode(true);
 
   // ændre indhold
   copy.querySelector("h3").textContent = items.title;
   copy.querySelector("img").src = items.image;
-  copy.querySelector("#seasons").textContent = items.time;
-  copy.querySelector("#landscape").textContent = items.persons;
+  copy.querySelector(".seasons").textContent = items.time;
+  copy.querySelector(".landscape").textContent = items.persons;
 
   //ændre link, så den henter det rigtige id
   copy.querySelector("a").href = `recipe_singleview.html?id=${items.id}`;
