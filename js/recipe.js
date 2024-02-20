@@ -27,8 +27,8 @@ function showProduct(items) {
   // ændre indhold
   copy.querySelector("h3").textContent = items.title;
   copy.querySelector("img").src = items.image;
-  copy.querySelector("#seasons").textContent = items.season;
-  copy.querySelector("#landscape").textContent = items.landscape;
+  copy.querySelector("#seasons").textContent = items.time;
+  copy.querySelector("#landscape").textContent = items.persons;
 
   //ændre link, så den henter det rigtige id
   copy.querySelector("a").href = `recipe_singleview.html?id=${items.id}`;
