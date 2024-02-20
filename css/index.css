@@ -88,6 +88,11 @@
   transform: scale(1.04);
 }
 
+/* link */
+a {
+  margin: auto;
+}
+
 @media screen and (max-width: 810px) {
   .mushroom_1 {
     max-width: 200px;
