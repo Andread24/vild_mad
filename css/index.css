@@ -28,6 +28,7 @@
   .mushroom_1 {
     max-width: 200px;
     height: auto;
+    margin-top: 30px;
   }
 }
 
@@ -35,5 +36,6 @@
   .mushroom_1 {
     max-width: 300px;
     height: auto;
+    margin-top: -30px;
   }
 }
