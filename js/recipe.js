@@ -25,7 +25,7 @@ function showProduct(items) {
   const copy = template.cloneNode(true);
 
   // ændre indhold
-  copy.querySelector("h3").textContent = items.title;
+  copy.querySelector("h2").textContent = items.title;
   copy.querySelector("img").src = items.image;
   copy.querySelector("#seasons").textContent = items.season;
   copy.querySelector("#landscape").textContent = items.landscape;
