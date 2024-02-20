@@ -14,8 +14,13 @@
 }
 
 .mushroom_1 {
-  max-width: 200px;
+  position: relative;
+  max-width: 300px;
   height: auto;
+  margin-top: -15px;
+  top: 126px;
+  left: 338px;
+  z-index: -2;
 }
 
 .grass img {
@@ -30,7 +35,7 @@
   position: relative;
   border-radius: 0.5em;
   background-color: #c7d3b7;
-  padding: 10% 5%;
+  padding: 10% 9%;
 }
 
 .forside_1_1_grid {
@@ -39,6 +44,48 @@
   grid-template-rows: auto;
   gap: 70px;
   margin: 100px;
+}
+
+.forside_1_1_1_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 70px;
+  margin: 100px;
+  align-items: center;
+}
+
+.index_recipes {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.index_recipes :hover {
+  transform: scale(1.04);
+}
+
+.index_mushroom {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.index_mushroom :hover {
+  transform: scale(1.04);
+}
+
+.index_wood {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.index_wood :hover {
+  transform: scale(1.04);
 }
 
 @media screen and (max-width: 810px) {
