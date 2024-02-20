@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/generel.css" />
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="grid_1-1-1_nav">
-        <nav>
-          <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="m_overview.html">Mushrooms</a></li>
-            <li><a href="recipe_overview.html">Recipes</a></li>
-            <li><a href="add_recipe.html">Add Recipe</a></li>
-          </ul>
-          <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="forside_billede_1_1_grid">
-        <div>
-          <h2>EXPLORE </br> VILD MAD</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/generel.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+  <header>
+    <div class="grid_1-1-1_nav">
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="m_overview.html">Mushrooms</a></li>
+          <li><a href="recipe_overview.html">Recipes</a></li>
+          <li><a href="add_recipe.html">Add Recipe</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
-        <div class="mushroom_container">
-          <img src="imgs/mushroom_1.svg" alt="mushroom" class="mushroom_1" />
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="forside_billede_1_1_grid">
+      <div>
+        <h2>EXPLORE </br> VILD MAD</h2>
+      </div>
+      <div class="mushroom_container">
+        <img src="imgs/mushroom_1.svg" alt="mushroom" class="mushroom_1" />
+      </div>
+    </div>
+    <img src="imgs/grass.svg" alt="grass" class="grass" />
+    <div class="forside_1_1_grid">
+      <article class="forside_tekstbox">
+        <h3>WHAT IS A FORRAGING?</h3>
+        <P>Foraging is the act of searching for and gathering food. It's a behavior exhibited by animals, including
+          humans, to find sustenance in nature.
+          Foraging can involve searching for edible plants, fruits, nuts, roots, fungi, or hunting and gathering small
+          animals or fish.
+          It has been a fundamental activity throughout human history, and it's still practiced by some communities
+          today.</P>
+      </article>
+      <article class="forside_tekstbox">
+        <h3>WHERE CAN I DO IT</h3>
+        <P>Foraging is like exploring a treasure map in real life! You can find goodies like berries, nuts, and even
+          edible plants all around you.
+          Look in places like forests, where you might find mushrooms or wild herbs. In open fields and meadows, there
+          could be tasty wildflowers or herbs waiting to be picked.
+          If you're near the coast, check out beaches and rocky shores for seaweed and shellfish. Even in cities,
+          parks and abandoned lots might have edible plants like dandelions or fruit trees.</P>
+      </article>
+    </div>
+    <div class="forside_1_1_1_grid">
+
+      <a href="quiz.html">
+        <div class="index_wood"><img src="/imgs/index-wood.png" alt="index_wood">
+          <h3>TEST YOUR KNOWLEDGE</h3>
         </div>
-      </div>
-      <img src="imgs/grass.svg" alt="grass" class="grass" />
-      <div class="forside_1_1_grid">
-        <article class="forside_tekstbox">
-<h3>WHAT IS A FORRAGING?</h3>
-<P>Foraging is the act of searching for and gathering food. It's a behavior exhibited by animals, including humans, to find sustenance in nature. 
-  Foraging can involve searching for edible plants, fruits, nuts, roots, fungi, or hunting and gathering small animals or fish. 
-  It has been a fundamental activity throughout human history, and it's still practiced by some communities today.</P>
-        </article>
-        <article class="forside_tekstbox">
-          <h3>WHERE CAN I DO IT</h3>
-<P>Foraging is like exploring a treasure map in real life! You can find goodies like berries, nuts, and even edible plants all around you. 
-  Look in places like forests, where you might find mushrooms or wild herbs. In open fields and meadows, there could be tasty wildflowers or herbs waiting to be picked. 
-  If you're near the coast, check out beaches and rocky shores for seaweed and shellfish. Even in cities, 
-  parks and abandoned lots might have edible plants like dandelions or fruit trees.</P>
-        </article>
-      </div>
-      <div class="forside_1_1_1_grid">
-          
-       <a href="quiz.html"><div class="index_wood"><h3>TEST YOUR KNOWLEDGE</h3><img src="/imgs/index-wood.png" alt="index_wood"></div></a>
-        
-         <a href="m_overview.html"><div class="index_mushroom"><h3>MUSHROOM</h3><img src="/imgs/index-mushroom.png" alt="index_mushroom" ></div></a>
-        
-        <a href="recipe_overview.html"><div class="index_recipes"><h3>MUSHROOMS RECIPES</h3><img src="/imgs/Recipes.png" alt="index_recipes" ></div></a>
-      </div>
-    </main>
-    <footer>
-      <img src="imgs/footer_svamp.svg" alt="footer" class="footer_img" />
-      <div class="footer_tekst"></div>
-    </footer>
-    <script src="js/burger.js"></script>
-  </body>
+      </a>
+
+      <a href="m_overview.html">
+        <div class="index_mushroom">
+          <img src="/imgs/index-mushroom.png" alt="index_mushroom">
+          <h3>MUSHROOM</h3>
+        </div>
+      </a>
+
+      <a href="recipe_overview.html">
+        <div class="index_recipes">
+          <img src="/imgs/Recipes.png" alt="index_recipes">
+          <h3>MUSHROOMS RECIPES</h3>
+        </div>
+      </a>
+    </div>
+  </main>
+  <footer>
+    <img src="imgs/footer_svamp.svg" alt="footer" class="footer_img" />
+    <div class="footer_tekst"></div>
+  </footer>
+  <script src="js/burger.js"></script>
+</body>
+
 </html>
