@@ -1,9 +1,3 @@
-.grass img {
-  max-width: 60%;
-  height: auto;
-  display: block;
-}
-
 .forside_billede_1_1_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -22,6 +16,29 @@
 .mushroom_1 {
   max-width: 200px;
   height: auto;
+}
+
+.grass img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+}
+
+.forside_tekstbox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 0.5em;
+  background-color: #c7d3b7;
+  padding: 10% 5%;
+}
+
+.forside_1_1_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 70px;
+  margin: 100px;
 }
 
 @media screen and (max-width: 810px) {
