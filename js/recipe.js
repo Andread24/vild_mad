@@ -20,8 +20,10 @@ function showProducts(items) {
 
 function showProduct(items) {
   const template = document.querySelector("#smallProductTemplate").content;
+
   // lav en kopi
   const copy = template.cloneNode(true);
+
   // ændre indhold
   copy.querySelector("h3").textContent = items.title;
   copy.querySelector("img").src = items.image;
