@@ -9,26 +9,26 @@ h1 {
 h2 {
   text-align: center;
   margin: 30px;
-  color: rgb(253, 255, 155);
+  color: #592e29;
   font-family: "urbanist";
 }
 
 .ingredients {
-  color: rgb(23, 63, 13);
+  color: #003e23;
   padding-top: 5px;
   font-family: "urbanist";
   margin: 40px;
 }
 
 .instruction {
-  color: rgb(23, 63, 13);
+  color: #003e23;
   padding-top: 5px;
   font-family: "urbanist";
   margin: 40px;
 }
 
 .tips {
-  color: rgb(23, 63, 13);
+  color: #003e23;
   padding-top: 5px;
   font-family: "urbanist";
   margin: 40px;
