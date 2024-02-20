@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+.logo img {
+  width: 130px;
+  height: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+}
 
 /* Produktliste */
 .overskrift {

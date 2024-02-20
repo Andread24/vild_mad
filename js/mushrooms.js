@@ -27,6 +27,7 @@ function showProduct(items) {
   copy.querySelector("#seasons").textContent = items.season;
   copy.querySelector("#landscape").textContent = items.landscape;
 
+  //ændre link så det henter id for det produkt som trykkes på
   copy.querySelector("a").href = `m_singleview.html?id=${items.id}`;
 
   // appende

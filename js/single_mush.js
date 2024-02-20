@@ -1,6 +1,8 @@
+//henter og identificerer ID for det produkt der klikkes på og definerer to konstanter
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 
+//henter data for det korrekte id
 fetch(`https://lhzhpvvlomyswblehybb.supabase.co/rest/v1/mushrooms?id=eq.${id}`, {
   method: "GET",
   headers: {
@@ -13,8 +15,10 @@ fetch(`https://lhzhpvvlomyswblehybb.supabase.co/rest/v1/mushrooms?id=eq.${id}`, 
 function showProduct(items) {
   console.log(items);
 
+  //gør så dataen ikke kommer som et array
   const singleProduct = items[0];
 
+  //udfyld indhold med den rigtige data
   document.querySelector("h1").textContent = singleProduct.title;
   document.querySelector("img").src = singleProduct.image;
 }
