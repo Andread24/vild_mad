@@ -79,7 +79,6 @@ h1:after {
   flex-direction: column;
   position: relative;
   border-radius: 0.5em;
-  background-color: #c7d3b7;
   padding: 10%;
   align-items: center;
   margin: 0px;
@@ -114,6 +113,10 @@ h1:after {
 .m_img {
   display: block; /* Gjør bildene til blokknivåelementer */
   margin: 0 auto; /* Sentrer bildene innenfor lenkene */
+}
+
+.text_box {
+  background-color: #c7d3b7;
 }
 
 @media only screen and (min-width: 950px) {
@@ -167,7 +170,6 @@ h1:after {
     flex-direction: column;
     position: relative;
     border-radius: 0.5em;
-    background-color: #c7d3b7;
     padding: 10% 5%;
     align-items: center;
   }
