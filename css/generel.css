@@ -197,7 +197,10 @@ h5 {
   .menu {
     display: none;
   }
-
+  header {
+    background-color: #aaba95;
+    height: 90px;
+  }
   .burger {
     display: block;
   }
@@ -220,21 +223,21 @@ h5 {
   nav.active .menu {
     display: block;
     background-color: rgb(94, 114, 89);
-    position: absolute;
-    top: 40px;
+    position: fixed;
+    top: 90px;
     left: 0;
     width: 100%;
     box-shadow: 0 0 10px rgb(79, 116, 70);
     z-index: 1;
     font-family: "urbanist";
-  }
-
-  nav.active .menu li {
-    margin: 10px 15px;
+    height: 100%;
   }
 
   nav.active .menu a {
-    font-size: 24px;
+    font-size: 70px;
+    color: #aaba95;
+    line-height: 90px;
+    display: flex;
   }
   .logo img {
     display: block;
