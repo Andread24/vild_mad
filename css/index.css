@@ -108,18 +108,17 @@
 a {
   margin: auto;
 }
-
+/* pil ned */
 .arrow {
   position: absolute;
   top: 90%;
   left: 50%;
-  border: solid black;
-  border-width: 0 0.9px 0.9px 0;
+  border: solid #003e23;
+  border-width: 0 1px 1px 0;
   border-radius: 1px;
   display: inline-block;
   padding: 12px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  -webkit-transform: rotate(-315deg);
 }
 
 @media screen and (max-width: 810px) {

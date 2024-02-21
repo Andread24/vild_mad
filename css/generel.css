@@ -17,6 +17,12 @@ main {
   background-color: #f4e5b6;
   width: 100%;
 }
+/* logo roterer på hover */
+.logo img:hover {
+  transform: rotate(-10deg);
+  transition: all 0.3s ease-in-out 0s;
+}
+
 /* tekst */
 
 @font-face {
