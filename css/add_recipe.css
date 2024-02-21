@@ -81,6 +81,9 @@ p {
   color: #003e23;
   font-size: 20px;
   font-family: "urbanist";
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: left;
 }
 label {
   text-align: center;
