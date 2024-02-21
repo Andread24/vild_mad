@@ -107,6 +107,46 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
+
+.footer_logo_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  text-align: center;
+}
+
+.fa-solid,
+.fa-brands {
+  color: #003e23;
+  font-size: 20px;
+}
+
+.footer_p {
+  margin-left: 0%;
+}
+
+#widthm {
+  max-width: 30ch;
+}
+.widthm {
+  max-width: 30ch;
+}
+
+.footer_logo {
+  margin: auto;
+  width: 20%;
+  height: auto;
+}
+footer img {
+  margin: 0 0 -5px 0;
+}
+.color {
+  width: 100%;
+  background-color: #f4e5b6;
+}
+.footer_grid {
+  margin: -3 !important;
+}
 /*
 .menu {
   display: flex;
