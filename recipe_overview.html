@@ -33,31 +33,34 @@
   <main>
     <h1>Recipes</h1>
     <div class="grid_produktliste">
-      <template id="smallProductTemplate">
+      <template id="ProductTemplate">
         <article class="smallProduct">
-          <img class="img_recipes" src="https://kea-alt-del.dk/t7/images/webp/640/1533.webp" alt=" mushroom" />
+          <div class="product-card spacing">
+            <a href="m_singleview.html">
+              <div class="product-thumb">
+                <img src="https://cdn-icons-png.flaticon.com/512/2806/2806251.png">
+              </div>
+            </a>
+            <div class="product-details">
+              <span class="product-category">Recipes</span>
+              <h4><a href="#">Mushroom</a></h4>
+              <div class="product-bottom-details">
+                <div class="product-links">
+                  <div class="time_grid">
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="product-info">Time</span>
+                    <p class="time product_input">Minutes</p>
+                  </div>
 
-
-          <a class="m_link" href="recipe_singleview.html">
-            <div class="text_box">
-              <h2>Mushroom</h2>
-              <div class="overview_1_1_grid">
-                <div>
-                  <i class="fa-solid fa-users"></i>
-                  <p class="seasons">Season</p>
-                  <p>minutes</p>
-                </div>
-                <div class="flexbox_recipes1">
-                  <i class="fa-solid fa-clock"></i>
-                  <div class="flexbox_recipes2">
-                    <p class="landscape">Landscape</p>
-                    <p> servings</p>
+                  <div class="servings_grid">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="product-info">Servings</span>
+                    <p class="servings product_input">Servings</p>
                   </div>
                 </div>
               </div>
             </div>
-          </a>
-
+          </div>
         </article>
       </template>
     </div>

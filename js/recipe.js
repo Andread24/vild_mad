@@ -19,16 +19,16 @@ function showProducts(items) {
 }
 
 function showProduct(items) {
-  const template = document.querySelector("#smallProductTemplate").content;
+  const template = document.querySelector("#ProductTemplate").content;
   console.log(items);
   // lav en kopi
   const copy = template.cloneNode(true);
 
   // ændre indhold
-  copy.querySelector("h2").textContent = items.title;
+  copy.querySelector("h4").textContent = items.title;
   copy.querySelector("img").src = items.image;
-  copy.querySelector(".seasons").textContent = items.time;
-  copy.querySelector(".landscape").textContent = items.persons;
+  copy.querySelector(".time").textContent = items.time;
+  copy.querySelector(".servings").textContent = items.persons;
 
   //ændre link, så den henter det rigtige id
   copy.querySelector("a").href = `recipe_singleview.html?id=${items.id}`;

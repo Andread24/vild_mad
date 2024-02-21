@@ -5,30 +5,6 @@
 }
 
 /* Produktliste */
-.overview_1_1_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 0px;
-  margin: 10px;
-  align-items: center;
-}
-
-.flexbox_recipes1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.flexbox_recipes2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.fa-solid {
-  color: #003e23;
-}
 
 .overskrift {
   margin-top: 15%;
@@ -54,19 +30,12 @@ h1:after {
   left: 30%;
 }
 
-.m_img {
-  border-radius: 0.5rem;
-}
-
 .grid_produktliste {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 4%;
   margin: 3% 8% 3% 8%;
-}
-.grid_produktliste img {
-  max-width: 80%;
 }
 
 .grid_produktliste article {
@@ -105,22 +74,16 @@ h1:after {
   margin-top: 55%;
 }
 
-.m_link {
-  display: inline-block; /* Gjør lenkene til blokknivåelementer */
-  text-align: center; /* Sentrer lenkene og innholdet innenfor */
-}
-
-.m_img {
-  display: block; /* Gjør bildene til blokknivåelementer */
-  margin: 0 auto; /* Sentrer bildene innenfor lenkene */
-}
-
-.text_box {
-  background-color: #c7d3b7;
-}
-
 @media only screen and (min-width: 950px) {
   /* Produktliste */
+  .grid_produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 30px;
+  }
+
   .overskrift {
     margin-top: 7%;
     margin-bottom: 5%;
@@ -145,64 +108,149 @@ h1:after {
     left: 30%;
   }
 
-  .m_img {
-    border-radius: 0.5rem;
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
   }
 
-  .grid_produktliste {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 5%;
-    margin: 3% 8% 3% 8%;
-  }
-  .grid_produktliste img {
-    max-width: 60%;
+    place-items: center;
+    min-height: 100vh;
   }
 
-  .grid_produktliste article {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .smallProduct {
-    display: flex;
-    flex-direction: column;
+  .product-card {
+    max-width: 380px;
     position: relative;
-    border-radius: 0.5em;
-    padding: 10% 5%;
-    align-items: center;
-  }
-
-  .smallProduct:hover {
-    transform: scale(1.04);
-    transition: all 0.5s;
-  }
-
-  .smallProduct h3 {
-    margin: 10px;
-    font-family: "urbanist";
-
-    font-size: 15px;
-  }
-
-  .smallProduct p {
-    font-family: "urbanist";
-    font-size: 15px;
-  }
-
-  .footer_img {
-    margin-top: 12%;
-  }
-
-  .m_link {
-    display: inline-block;
-    text-align: center;
-  }
-
-  .m_img {
-    display: block;
+    box-shadow: 0 2px 5px #333;
     margin: 0 auto;
+    background: #c7d3b7;
+    border-radius: 10px;
+  }
+
+  .spacing {
+    margin: 10px;
+  }
+
+  .product-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .product-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .product-details {
+    padding: 15px 30px 10px 30px;
+  }
+
+  .product-category {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #003e23;
+    margin-bottom: 18px;
+    font-family: "urbanist";
+  }
+
+  .product-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #003e23;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .product-details h4 a:hover {
+    color: #f52544;
+  }
+
+  .product-details p {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #003e23;
+    margin-bottom: 18px;
+  }
+
+  .product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #003e23;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-bottom-details div {
+    float: left;
+    width: 50%;
+  }
+
+  .product-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #003e23;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .product-links a:hover {
+    color: #f52544;
+  }
+
+  .product-info {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #003e23;
+    margin-bottom: 18px;
+    margin-top: 15px;
+    text-align: center;
+    font-family: "urbanist";
+  }
+
+  .time.product_input,
+  .servings.product_input {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .fa-solid {
+    color: #003e23;
+    font-size: 20px;
+  }
+
+  h4 {
+    margin-bottom: 18px;
+    color: #003e23;
   }
 }
 
