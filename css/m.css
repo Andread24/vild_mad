@@ -188,3 +188,15 @@ h1:after {
     margin: 30px;
   }
 }
+
+.footer_grid_1_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  margin: 30px;
+}
+
+.footer_c {
+  text-align: left;
+}

@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/generel.css">
-    <link rel="stylesheet" href="css/m.css">
-</head>
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/m.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div>
-                <a href="index.html" class="logo"><img src="imgs/logo.svg" alt="logo"></a>
-            </div>
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="m_overview.html">Mushrooms</a>
-                <a href="recipe_overview.html">Recipes</a>
-                <a href="add_recipe.html">Add Recipe</a>
-            </div>
-            <div class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
+      <nav>
+        <div>
+          <a href="index.html" class="logo"
+            ><img src="imgs/logo.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="m_overview.html">Mushrooms</a>
+          <a href="recipe_overview.html">Recipes</a>
+          <a href="add_recipe.html">Add Recipe</a>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
     <main>
-        <h1 class="overskrift">Mushrooms</h1>
-        <div class="grid_produktliste">
-            <template id="smallProductTemplate">
-                <article class="smallProduct">
-                    <a class="m_link" href="m_singleview.html">
-                        <img class="m_img" src="https://kea-alt-del.dk/t7/images/webp/640/1533.webp " alt="mushroom" />
-                        <h2>Mushroom</h2>
-                        <p><b>Season:</b></p>
-                        <p id="seasons">Season</p>
-                        <p><b>Landscape:</b></p>
-                        <p id="landscape">Landscape</p>
-                    </a>
-                </article>
-            </template>
-        </div>
+      <h1 class="overskrift">Mushrooms</h1>
+      <div class="grid_produktliste">
+        <template id="smallProductTemplate">
+          <article class="smallProduct">
+            <a class="m_link" href="m_singleview.html">
+              <img
+                class="m_img"
+                src="https://kea-alt-del.dk/t7/images/webp/640/1533.webp "
+                alt="mushroom"
+              />
+              <h2>Mushroom</h2>
+              <p><b>Season:</b></p>
+              <p id="seasons">Season</p>
+              <p><b>Landscape:</b></p>
+              <p id="landscape">Landscape</p>
+            </a>
+          </article>
+        </template>
+      </div>
     </main>
     <footer>
-        <img src="imgs/footer_svamp.svg" alt="footer" class="footer_img">
-        <div class="footer_tekst"></div>
+      <img src="imgs/footer_svamp.svg" alt="footer" class="footer_img" />
+      <div class="footer_grid_1_1_1">
+        <div>
+          <i class="fa-solid fa-square-envelope"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+        </div>
+        <div class="footer_c">
+          <h3>CONTACT</h3>
+          <p>TELEFON: +45 26 35 00 17</p>
+          <p>
+            Want to learn more? Visit
+            <a href="https://www.vildmad.dk/dk">vildmad.dk</a>
+          </p>
+        </div>
+        <div><img src="/imgs/green_logo.svg" alt="Logo" /></div>
+      </div>
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/mushrooms.js"></script>
-</body>
-
+  </body>
 </html>
