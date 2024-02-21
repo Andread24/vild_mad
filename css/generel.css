@@ -41,13 +41,6 @@ h4 {
   color: #592e29;
   font-family: "urbanist";
 }
-h6 {
-  text-align: center;
-  color: #003e23;
-  font-family: "urbanist";
-  font-size: 50px;
-  margin-top: 240px;
-}
 p {
   color: #003e23;
   font-family: "urbanist";
@@ -121,12 +114,11 @@ nav {
   margin: auto;
   text-align: center;
 }
-.icon {
-  max-width: 60%;
-  max-height: 60%;
-  width: auto;
-  height: auto;
-  margin: auto;
+
+.fa-solid,
+.fa-brands {
+  color: #003e23;
+  font-size: 20px;
 }
 
 .footer_p {
