@@ -20,5 +20,9 @@ function showProduct(items) {
 
   //udfyld indhold med den rigtige data
   document.querySelector("h1").textContent = singleProduct.title;
-  document.querySelector("img").src = singleProduct.image;
+  document.querySelector(".mushroom_img").src = singleProduct.image;
+  document.querySelector(".ingredients").textContent = singleProduct.description;
+  document.querySelector(".instruction").textContent = singleProduct.foraging;
+  document.querySelector(".mouth").textContent = singleProduct.mouth;
+  document.querySelector(".tips").textContent = singleProduct.nose;
 }
