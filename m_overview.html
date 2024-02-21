@@ -1,82 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/generel.css" />
     <link rel="stylesheet" href="css/m.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav>
-        <div>
-          <a href="index.html" class="logo"
-            ><img src="imgs/logo.svg" alt="logo"
-          /></a>
-        </div>
-        <div class="menu">
-          <a href="index.html">Home</a>
-          <a href="m_overview.html">Mushrooms</a>
-          <a href="recipe_overview.html">Recipes</a>
-          <a href="add_recipe.html">Add Recipe</a>
-        </div>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+        <nav>
+            <div>
+                <a href="index.html" class="logo"><img src="imgs/logo.svg" alt="logo" /></a>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="m_overview.html">Mushrooms</a>
+                <a href="recipe_overview.html">Recipes</a>
+                <a href="add_recipe.html">Add Recipe</a>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
     </header>
     <main>
-      <h1 class="overskrift">Mushrooms</h1>
-      <div class="grid_produktliste">
-        <template id="smallProductTemplate">
-          <article class="smallProduct">
-            <a class="m_link" href="m_singleview.html">
-              <img
-                class="m_img"
-                src="https://kea-alt-del.dk/t7/images/webp/640/1533.webp "
-                alt="mushroom"
-              />
-              <h2>Mushroom</h2>
-              <p><b>Season:</b></p>
-              <p id="seasons">Season</p>
-              <p><b>Landscape:</b></p>
-              <p id="landscape">Landscape</p>
-            </a>
-          </article>
-        </template>
-      </div>
+        <h1 class="overskrift">Mushrooms</h1>
+
+        <div class="grid_produktliste">
+            <template id="ProductTemplate">
+                <article class="smallProduct">
+                    <div class="product-card spacing">
+                        <a href="m_singleview.html">
+                            <div class="product-thumb">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2806/2806251.png">
+                            </div>
+                        </a>
+                        <div class="product-details">
+                            <span class="product-category">Mushroom</span>
+                            <h4><a href="#">Mushroom</a></h4>
+                            <div class="product-bottom-details">
+                                <div class="product-links">
+                                    <div class="landscape_grid">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span class="product-info">Landscape</span>
+                                        <p class="landscape product_input">Landscape</p>
+                                    </div>
+
+                                    <div class="season_grid">
+                                        <i class="fa-solid fa-users"></i>
+                                        <span class="product-info">Season</span>
+                                        <p class="season product_input">Season</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </template>
+        </div>
     </main>
     <footer>
-      <img src="imgs/footer_svamp.svg" alt="footer" class="footer_img" />
-      <div class="color">
-      <section class="footer_container">
-        <div class="footer_grid">
-            
-          <h3>CONTACT</h3>
-          <p class="footer_p">Want to learn more? Visit vildmad.dk</p>
-          <p class="footer_p">Tlf.: 26 35 00 17</p>
-        </div>
+        <img src="imgs/footer_svamp.svg" alt="footer" class="footer_img" />
+        <div class="color">
+            <section class="footer_container">
+                <div class="footer_grid">
 
-        <div class="footer_grid">
-                <i class="fa-solid fa-square-envelope"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-square-facebook"></i>
-            </div>
-            
-          <div class="footer_logo_grid">
-            <a href="index.html"
-            ><img class="footer_logo" src="imgs/logo.svg" alt="logo"
-          /></a>
-           
+                    <h3>CONTACT</h3>
+                    <p class="footer_p">Want to learn more? Visit vildmad.dk</p>
+                    <p class="footer_p">Tlf.: 26 35 00 17</p>
+                </div>
+
+                <div class="footer_grid">
+                    <i class="fa-solid fa-square-envelope"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+
+                <div class="footer_logo_grid">
+                    <a href="index.html"><img class="footer_logo" src="imgs/logo.svg" alt="logo" /></a>
+
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
     </footer>
     <script src="js/burger.js"></script>
     <script src="js/mushrooms.js"></script>
-  </body>
+</body>
+
 </html>
