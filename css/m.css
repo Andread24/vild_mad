@@ -227,17 +227,6 @@ h1:after {
     color: #f52544;
   }
 
-  .product-info {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #003e23;
-    margin-bottom: 18px;
-    margin-top: 15px;
-    text-align: center;
-    font-family: "urbanist";
-  }
   .season.product_input,
   .landscape.product_input {
     text-align: center;
