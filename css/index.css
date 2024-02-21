@@ -164,6 +164,7 @@ a {
     margin: 30px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .forside_1_1_1_grid {
     display: grid;
