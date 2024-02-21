@@ -1,7 +1,7 @@
 .forms_grid {
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.5fr 0.5fr;
-  margin: 50px 5%;
+  margin: 50px 12%;
   padding: 0;
   row-gap: 30px;
 }
@@ -81,6 +81,9 @@ p {
   color: #003e23;
   font-size: 20px;
   font-family: "urbanist";
+  margin-left: 12%;
+  margin-right: 12%;
+  text-align: left;
 }
 label {
   text-align: center;
