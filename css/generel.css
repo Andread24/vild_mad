@@ -121,12 +121,11 @@ nav {
   margin: auto;
   text-align: center;
 }
-.icon {
-  max-width: 60%;
-  max-height: 60%;
-  width: auto;
-  height: auto;
-  margin: auto;
+
+.fa-solid,
+.fa-brands {
+  color: #003e23;
+  font-size: 20px;
 }
 
 .footer_p {
