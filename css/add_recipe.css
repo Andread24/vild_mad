@@ -114,4 +114,12 @@ input {
   #grid_ingredients {
     margin-bottom: 55px;
   }
+
+  .grid_1 {
+    margin-top: 0px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
 }
