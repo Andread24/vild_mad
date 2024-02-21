@@ -17,9 +17,10 @@ body {
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 650px;
-  padding: 4rem;
+  padding: 3rem;
   position: relative; /* Ensure the container is a positioned parent for absolute positioning */
   z-index: 1; /* Ensure the quiz is above the SVG */
+  top: -30px;
 }
 
 .loading-bar {
