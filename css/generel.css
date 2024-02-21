@@ -12,6 +12,7 @@ footer {
 }
 main {
   margin-top: 170px;
+  margin-bottom: 500px;
 }
 /* logo roterer på hover */
 .logo img:hover {
@@ -113,10 +114,10 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 .footer_img {
-  margin-bottom: 0;
+  bottom: 80%;
+  position: absolute;
 }
 .footer_logo {
   display: flex;
@@ -245,5 +246,8 @@ h5 {
     right: 10px;
     width: 70px;
     margin: 10px;
+  }
+  main {
+    margin-bottom: 120px;
   }
 }
