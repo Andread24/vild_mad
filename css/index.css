@@ -127,28 +127,7 @@ a {
   padding: 12px;
   transform: rotate(-315deg);
 }
-
-@media screen and (max-width: 810px) {
-  .mushroom_1 {
-    max-width: 200px;
-    height: auto;
-    margin-top: 30px;
-  }
-  .mushroom_1 {
-    max-width: 300px;
-    height: auto;
-    margin-top: -30px;
-  }
-  .forside_1_1_grid,
-  .forside_1_1_1_grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
-    margin: 30px;
-  }
-}
-
+/*
 @media screen and (min-width: 800px) {
   .mushroom_1 {
     max-width: 300px;
@@ -168,11 +147,31 @@ a {
     scale: 1.2;
     margin: 20px;
   }
-}
+}*/
 
 /*mobilsite */
-
+@media screen and (max-width: 800px) {
+  .mushroom_1 {
+    max-width: 300px;
+    height: auto;
+    margin-top: -30px;
+  }
+  .forside_1_1_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 30px;
+  }
+}
 @media screen and (max-width: 1200px) {
+  .forside_1_1_1_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 30px;
+  }
   /*forside baggrund*/
   .forside_screen {
     aspect-ratio: 6/8;
