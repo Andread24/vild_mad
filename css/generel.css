@@ -10,6 +10,9 @@ footer {
   width: 100%;
   margin: 0;
 }
+main {
+  margin-top: 200px;
+}
 .footer_tekst {
   background-color: #f4e5b6;
   width: 100%;
@@ -71,7 +74,6 @@ nav {
 .menu a {
   color: rgb(23, 63, 13);
   font-size: 20px;
-  margin-top: 10%;
   font-family: "urbanist";
   text-decoration: none;
 }
