@@ -37,26 +37,74 @@ p {
   color: #003e23;
   font-family: "urbanist";
 }
-/* burgermenu */
-
+/*menu*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
 nav {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1%;
+  position: relative;
+}
+.logo img {
+  display: flex;
+  padding-bottom: 5px;
+  width: 100px;
+  height: auto;
+}
+.menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  gap: 50px;
+}
+.menu a {
+  color: rgb(23, 63, 13);
+  font-size: 20px;
+  margin-top: 10%;
+  font-family: "urbanist";
+  text-decoration: none;
+}
+.menu a:hover {
+  color: rgb(73, 92, 68);
+}
+.burger {
+  display: none;
+}
+/* burgermenu */
+.burger {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin: 10px;
 }
 
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(23, 63, 13);
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+/*
 .menu {
   display: flex;
   list-style: none;
   margin: 20px 0 0 0;
   padding: 0;
-}
-
-.menu li {
-  margin-right: 100px;
-}
-
-.menu li:last-child {
-  margin-right: 0;
 }
 
 .menu a {
@@ -96,17 +144,17 @@ nav {
 .burger {
   display: none;
 }
-
+*/
 /* responsiv burgermenu */
 @media screen and (max-width: 800px) {
-  nav {
+  /*nav {
     justify-content: start;
   }
 
   .grid_1-1-1_nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
+  }*/
 
   .menu {
     display: none;
@@ -149,5 +197,12 @@ nav {
 
   nav.active .menu a {
     font-size: 24px;
+  }
+  .logo img {
+    display: block;
+    position: fixed;
+    right: 10px;
+    width: 70px;
+    margin: 10px;
   }
 }
