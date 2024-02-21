@@ -10,6 +10,9 @@ footer {
   width: 100%;
   margin: 0;
 }
+main {
+  margin-top: 200px;
+}
 .footer_tekst {
   background-color: #f4e5b6;
   width: 100%;
