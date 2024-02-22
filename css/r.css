@@ -73,6 +73,124 @@ h1:after {
 .footer_img {
   margin-top: 55%;
 }
+/****** KOPIERET IND FRA MEDIA ******/
+section {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.product-card {
+  max-width: 380px;
+  position: relative;
+  box-shadow: 0 2px 5px #333;
+  margin: 0 auto;
+  background: #c7d3b7;
+  border-radius: 10px;
+}
+
+.spacing {
+  margin: 10px;
+}
+
+.product-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  padding: 50px;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-thumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-details {
+  padding: 15px 30px 10px 30px;
+}
+
+.product-category {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #003e23;
+  margin-bottom: 18px;
+  font-family: "urbanist";
+}
+
+.product-details h4 a {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  color: #003e23;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+  color: #f52544;
+}
+
+.product-details p {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #003e23;
+  margin-bottom: 18px;
+}
+
+.product-bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #003e23;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.product-links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #003e23;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.product-links a:hover {
+  color: #f52544;
+}
+
+.time.product_input,
+.servings.product_input {
+  text-align: center;
+  font-size: 14px;
+}
+
+.fa-solid {
+  color: #003e23;
+  font-size: 20px;
+}
+
+h4 {
+  margin-bottom: 18px;
+  color: #003e23;
+}
 
 @media only screen and (min-width: 950px) {
   /* Produktliste */
