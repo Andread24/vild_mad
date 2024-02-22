@@ -20,8 +20,25 @@ function showProduct(items) {
 
   //udfyld indhold med den rigtige data
   document.querySelector("h1").textContent = singleProduct.title;
-  document.querySelector("img").src = singleProduct.image;
-  document.querySelector(".instruction").textContent = singleProduct.directions;
+  document.querySelector(".rec_billede").src = singleProduct.image;
+  document.querySelector(".instruction_1").textContent = singleProduct.directions[0];
+  document.querySelector(".instruction_2").textContent = singleProduct.directions[1];
+  document.querySelector(".instruction_3").textContent = singleProduct.directions[2];
+  document.querySelector(".instruction_4").textContent = singleProduct.directions[3];
+  document.querySelector(".instruction_5").textContent = singleProduct.directions[4];
+  document.querySelector(".instruction_6").textContent = singleProduct.directions[5];
+  document.querySelector(".instruction_7").textContent = singleProduct.directions[6];
+  document.querySelector(".instruction_8").textContent = singleProduct.directions[7];
+  document.querySelector(".instruction_9").textContent = singleProduct.directions[8];
+  document.querySelector(".instruction_10").textContent = singleProduct.directions[9];
   document.querySelector(".tips").textContent = singleProduct.tips;
-  document.querySelector(".ingredients").textContent = singleProduct.ingrediens;
+  document.querySelector(".ingredients_1").textContent = singleProduct.ingrediens[0];
+  document.querySelector(".ingredients_2").textContent = singleProduct.ingrediens[1];
+  document.querySelector(".ingredients_3").textContent = singleProduct.ingrediens[2];
+  document.querySelector(".ingredients_4").textContent = singleProduct.ingrediens[3];
+  document.querySelector(".ingredients_5").textContent = singleProduct.ingrediens[4];
+  document.querySelector(".ingredients_6").textContent = singleProduct.ingrediens[5];
+  document.querySelector(".ingredients_7").textContent = singleProduct.ingrediens[6];
+  document.querySelector(".ingredients_8").textContent = singleProduct.ingrediens[7];
+  document.querySelector(".mush_billede").src = singleProduct.mushroom_image;
 }
