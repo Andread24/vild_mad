@@ -144,7 +144,6 @@ footer p {
   font-family: "urbanist";
   font-size: 22px;
 }
-}
 /*
 .menu {
   display: flex;
@@ -238,11 +237,11 @@ footer p {
     box-shadow: 0 0 10px rgb(79, 116, 70);
     z-index: 1;
     font-family: "urbanist";
-    height: 100%;
+    height: 50%;
   }
 
   nav.active .menu a {
-    font-size: 70px;
+    font-size: 30px;
     color: #aaba95;
     line-height: 90px;
     display: flex;
