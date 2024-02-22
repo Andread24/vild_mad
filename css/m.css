@@ -142,8 +142,7 @@ h1:after {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
-    padding: 50px;
+    height: 220px;
     background: #fff;
     border-radius: 10px 10px 0 0;
   }
