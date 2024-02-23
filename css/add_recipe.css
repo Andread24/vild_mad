@@ -1,6 +1,6 @@
 .forms_grid {
   display: grid;
-  grid-template-rows: 0.5fr 4fr 0.5fr 0.5fr;
+  grid-template-rows: 20fr 70fr 30fr 10fr;
   margin: 50px 12%;
   padding: 0;
   row-gap: 30px;
@@ -81,9 +81,11 @@ p {
   color: #003e23;
   font-size: 20px;
   font-family: "urbanist";
+  text-align: left;
+}
+.first_p {
   margin-left: 12%;
   margin-right: 12%;
-  text-align: left;
 }
 label {
   text-align: center;
@@ -94,7 +96,7 @@ label {
 textarea,
 input {
   text-align: left;
-  color: beige;
+  color: rgb(73, 92, 68);
   font-size: 18px;
   font-family: "urbanist";
   margin: 0;

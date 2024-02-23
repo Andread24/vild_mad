@@ -49,7 +49,7 @@ h2 {
     margin: 5px 10px 5px 10px;
   }
 
-  img {
+  main img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -72,7 +72,7 @@ h2 {
     margin: 11px 55px 11px 55px;
   }
 
-  img {
+  main img {
     display: block;
     max-width: 80%; /* Skalér billedet ned */
     height: auto;
